@@ -8,27 +8,40 @@ public class Main {
 	// write your code here
         String userName;
         Scanner keyboard;
-        int userFeet, userInches, userPounds;
+
+
 
 
         //initializing
         keyboard= new Scanner(System.in);
-        total =
+        Scanner reader = new Scanner(System.in);
+        int weight;
+        int feet;
+        int inches;
+
 
         System.out.println("What is your name?");
-        userName=keyboard.nextLine();
+        userName = keyboard.nextLine();
 
         System.out.println("What is your height in only feet?");
-        userFeet=keyboard.nextLine();
+        feet = reader.nextInt();
 
         System.out.println("What is your height in only inches?");
-        userInches=keyboard.nextLine();
+        inches = reader.nextInt();
 
         System.out.println("How much do you weigh in pounds?");
-        userPounds=keyboard.nextLine();
+        weight = reader.nextInt();
 
 
-        System.out.println("");
+        System.out.println(""+userName+",this is your BMI equation");
+        System.out.println("_________________________");
+        System.out.println((feet * 12)+inches * 0.0254);
+
+        System.out.println(weight / 0.453592);
+
+
+
+
 
 
 

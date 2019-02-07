@@ -34,10 +34,12 @@ public class Main {
 
 
         System.out.println(""+userName+",this is your BMI equation");
-        System.out.println("_________________________");
-        System.out.println((feet * 12)+inches * 0.0254);
 
-        System.out.println(weight / 0.453592);
+        System.out.println((feet * 12)+inches * 0.0254) / weight / 0.453592);
+
+
+
+
 
 
 

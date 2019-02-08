@@ -1,5 +1,3 @@
-package com.Lickingheights;
-
 import java.util.Scanner;
 
 public class Main {
@@ -15,7 +13,7 @@ public class Main {
         //initializing
         keyboard= new Scanner(System.in);
         Scanner reader = new Scanner(System.in);
-        int weight;
+        double weight;
         int feet;
         int inches;
 
@@ -34,8 +32,12 @@ public class Main {
 
 
         System.out.println(""+userName+",this is your BMI equation");
+        inches = inches + (feet * 12);
+        double meters = inches * 0.0254;
+        weight = weight * 0.453592;
+        double BMI = weight / (meters * meters);
 
-        System.out.println((feet * 12)+inches * 0.0254) / weight / 0.453592);
+        System.out.println(BMI);
 
 
 
